@@ -1,0 +1,14 @@
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\bin\Debug\net9.0\ClassToTest.exe
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\bin\Debug\net9.0\ClassToTest.deps.json
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\bin\Debug\net9.0\ClassToTest.runtimeconfig.json
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\bin\Debug\net9.0\ClassToTest.dll
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\bin\Debug\net9.0\ClassToTest.pdb
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ClassToTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ClassToTest.AssemblyInfoInputs.cache
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ClassToTest.AssemblyInfo.cs
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ClassToTest.csproj.CoreCompileInputs.cache
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ClassToTest.dll
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\refint\ClassToTest.dll
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ClassToTest.pdb
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ClassToTest.genruntimeconfig.cache
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ref\ClassToTest.dll
