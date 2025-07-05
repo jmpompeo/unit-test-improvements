@@ -1,9 +1,11 @@
-﻿using AutoFixture;
-using AutoFixture.AutoMoq;
-using AutoFixture.Xunit3;
+﻿using AutoFixture.Xunit3;
 using ClassToTest;
+using ClassToTest.Interfaces;
+using ClassToTest.Models;
 using Moq;
 using Shouldly;
+using UnitTestImprovementProject.Attributes;
+using UnitTestImprovementProject.Models;
 
 namespace UnitTestImprovementProject;
 
@@ -11,16 +13,15 @@ public class UnitTest1
 {
     [Theory]
     [AutoMoqData]
-    public void Add_Should_Return_Same_Sum(
-       List<Product> products,
-       [Frozen] Mock<IDependencyClass> dependencyClass,
-       MethodsToTest methodsToTest)
+    public void Add_Should_Return_Same_Sum(AddNumberContext context)
     {
-        SetupProductPriceMocks(products, dependencyClass);
+        context.MockSetup.SetupProductPriceMocks(
+            context.Products,
+            context.DependencyMock);
         
-        var sum = methodsToTest.Add(products);
+        var sum = context.MethodsToTest.Add(context.Products);
         
-        sum.ShouldBe(products[0].Price + products[1].Price + products[2].Price);
+        sum.ShouldBe(context.Products[0].Price + context.Products[1].Price + context.Products[2].Price);
     }
     
     [Theory]
@@ -28,22 +29,13 @@ public class UnitTest1
     public void Subtract_Should_Return_Same_Difference(
         List<Product> products,
         [Frozen] Mock<IDependencyClass> dependencyClass,
-        MethodsToTest methodsToTest)
+        MethodsToTest methodsToTest,
+        MockSetup mockSetup)
     {
-        SetupProductPriceMocks(products, dependencyClass);
+        mockSetup.SetupProductPriceMocks(products, dependencyClass);
 
         var sum = methodsToTest.Subtract(products);
         
         sum.ShouldBe(products[0].Price - products[1].Price - products[2].Price);
-    }
-
-    private static void SetupProductPriceMocks(List<Product> products, Mock<IDependencyClass> dependencyClass)
-    {
-        dependencyClass.Setup(x => x.GetPriceFromFirstProduct(products))
-            .Returns(products[0].Price);
-        dependencyClass.Setup(x => x.GetPriceFromSecondProduct(products))
-            .Returns(products[1].Price);
-        dependencyClass.Setup(x => x.GetPriceFromThirdProduct(products))
-            .Returns(products[2].Price);
     }
 }

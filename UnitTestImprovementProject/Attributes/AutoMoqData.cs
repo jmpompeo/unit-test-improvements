@@ -2,7 +2,7 @@ using AutoFixture;
 using AutoFixture.AutoMoq;
 using AutoFixture.Xunit3;
 
-namespace UnitTestImprovementProject;
+namespace UnitTestImprovementProject.Attributes;
 
 public class AutoMoqData() : AutoDataAttribute(() =>
 {

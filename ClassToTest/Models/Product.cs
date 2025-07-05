@@ -1,4 +1,4 @@
-namespace ClassToTest;
+namespace ClassToTest.Models;
 
 public class Product
 {

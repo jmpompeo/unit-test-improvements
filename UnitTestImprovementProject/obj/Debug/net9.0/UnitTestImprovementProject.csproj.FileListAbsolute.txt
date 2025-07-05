@@ -154,3 +154,4 @@ C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\UnitTestImprovementProje
 C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\UnitTestImprovementProject\bin\Debug\net9.0\AutoFixture.AutoMoq.dll
 C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\UnitTestImprovementProject\bin\Debug\net9.0\Castle.Core.dll
 C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\UnitTestImprovementProject\bin\Debug\net9.0\Moq.dll
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\UnitTestImprovementProject\obj\Debug\net9.0\UnitTestImprovementProject.sourcelink.json

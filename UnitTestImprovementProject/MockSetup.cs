@@ -1,4 +1,6 @@
 using ClassToTest;
+using ClassToTest.Interfaces;
+using ClassToTest.Models;
 using Moq;
 
 namespace UnitTestImprovementProject;

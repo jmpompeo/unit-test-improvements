@@ -1,4 +1,6 @@
-namespace ClassToTest;
+using ClassToTest.Models;
+
+namespace ClassToTest.Interfaces;
 
 public interface IDependencyClass
 {

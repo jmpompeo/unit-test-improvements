@@ -12,3 +12,4 @@ C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\ne
 C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ClassToTest.pdb
 C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ClassToTest.genruntimeconfig.cache
 C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ref\ClassToTest.dll
+C:\Users\joeyp\RiderProjects\UnitTestImprovementProject\ClassToTest\obj\Debug\net9.0\ClassToTest.sourcelink.json
