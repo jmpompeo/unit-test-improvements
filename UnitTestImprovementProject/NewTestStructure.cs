@@ -1,4 +1,4 @@
-﻿using AutoFixture.Xunit3;
+﻿using AutoFixture.Xunit2;
 using ClassToTest;
 using ClassToTest.Interfaces;
 using ClassToTest.Models;
