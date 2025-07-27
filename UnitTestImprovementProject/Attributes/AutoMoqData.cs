@@ -1,6 +1,6 @@
 using AutoFixture;
 using AutoFixture.AutoMoq;
-using AutoFixture.Xunit3;
+using AutoFixture.Xunit2;
 
 namespace UnitTestImprovementProject.Attributes;
 
