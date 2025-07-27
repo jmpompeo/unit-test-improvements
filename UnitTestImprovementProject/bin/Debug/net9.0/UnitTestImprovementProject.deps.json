@@ -9,15 +9,14 @@
       "UnitTestImprovementProject/1.0.0": {
         "dependencies": {
           "AutoFixture.AutoMoq": "5.0.0-preview0012",
-          "AutoFixture.Xunit3": "5.0.0-preview0012",
+          "AutoFixture.Xunit2": "5.0.0-preview0012",
           "ClassToTest": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.14.1",
           "Microsoft.TestPlatform.ObjectModel": "17.14.1",
           "Microsoft.TestPlatform.TestHost": "17.14.1",
           "Shouldly": "4.3.0",
-          "xunit.runner.visualstudio": "3.1.1",
-          "xunit.v3.common": "3.0.0-pre.25",
-          "xunit.v3.extensibility.core": "3.0.0-pre.25"
+          "xunit": "2.4.2",
+          "xunit.runner.visualstudio": "2.4.5"
         },
         "runtime": {
           "UnitTestImprovementProject.dll": {}
@@ -49,13 +48,16 @@
           }
         }
       },
-      "AutoFixture.Xunit3/5.0.0-preview0012": {
+      "AutoFixture.Xunit2/5.0.0-preview0012": {
         "dependencies": {
           "AutoFixture": "5.0.0-preview0012",
-          "xunit.v3.extensibility.core": "3.0.0-pre.25"
+          "System.Memory": "4.5.5",
+          "System.Net.Http": "4.3.4",
+          "System.Security.Cryptography.X509Certificates": "4.3.2",
+          "xunit.extensibility.core": "2.4.2"
         },
         "runtime": {
-          "lib/net6.0/AutoFixture.Xunit3.dll": {
+          "lib/net6.0/AutoFixture.Xunit2.dll": {
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.0.0.0"
           }
@@ -106,14 +108,6 @@
           "lib/netstandard2.0/Fare.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.1.0"
-          }
-        }
-      },
-      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
           }
         }
       },
@@ -437,7 +431,7 @@
           "System.Security.Cryptography.Algorithms": "4.3.0",
           "System.Security.Cryptography.Encoding": "4.3.0",
           "System.Security.Cryptography.Primitives": "4.3.0",
-          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.2",
           "System.Text.Encoding": "4.3.0",
           "System.Text.Encoding.Extensions": "4.3.0",
           "System.Text.RegularExpressions": "4.3.1",
@@ -827,6 +821,7 @@
           }
         }
       },
+      "System.Memory/4.5.5": {},
       "System.Net.Http/4.3.4": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -848,7 +843,7 @@
           "System.Security.Cryptography.Encoding": "4.3.0",
           "System.Security.Cryptography.OpenSsl": "4.3.0",
           "System.Security.Cryptography.Primitives": "4.3.0",
-          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.2",
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0",
@@ -1095,7 +1090,7 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Security.Cryptography.X509Certificates/4.3.0": {
+      "System.Security.Cryptography.X509Certificates/4.3.2": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
           "System.Collections": "4.3.0",
@@ -1220,29 +1215,64 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "xunit.runner.visualstudio/3.1.1": {},
-      "xunit.v3.common/3.0.0-pre.25": {
+      "xunit/2.4.2": {
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "6.0.0"
-        },
+          "xunit.analyzers": "1.0.0",
+          "xunit.assert": "2.4.2",
+          "xunit.core": "2.4.2"
+        }
+      },
+      "xunit.abstractions/2.0.3": {
         "runtime": {
-          "lib/netstandard2.0/xunit.v3.common.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
           }
         }
       },
-      "xunit.v3.extensibility.core/3.0.0-pre.25": {
+      "xunit.analyzers/1.0.0": {},
+      "xunit.assert/2.4.2": {
         "dependencies": {
-          "xunit.v3.common": "3.0.0-pre.25"
+          "NETStandard.Library": "1.6.1"
         },
         "runtime": {
-          "lib/netstandard2.0/xunit.v3.core.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
+          "lib/netstandard1.1/xunit.assert.dll": {
+            "assemblyVersion": "2.4.2.0",
+            "fileVersion": "2.4.2.0"
           }
         }
       },
+      "xunit.core/2.4.2": {
+        "dependencies": {
+          "xunit.extensibility.core": "2.4.2",
+          "xunit.extensibility.execution": "2.4.2"
+        }
+      },
+      "xunit.extensibility.core/2.4.2": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "xunit.abstractions": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.core.dll": {
+            "assemblyVersion": "2.4.2.0",
+            "fileVersion": "2.4.2.0"
+          }
+        }
+      },
+      "xunit.extensibility.execution/2.4.2": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "xunit.extensibility.core": "2.4.2"
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.execution.dotnet.dll": {
+            "assemblyVersion": "2.4.2.0",
+            "fileVersion": "2.4.2.0"
+          }
+        }
+      },
+      "xunit.runner.visualstudio/2.4.5": {},
       "ClassToTest/1.0.0": {
         "runtime": {
           "ClassToTest.dll": {
@@ -1273,12 +1303,12 @@
       "path": "autofixture.automoq/5.0.0-preview0012",
       "hashPath": "autofixture.automoq.5.0.0-preview0012.nupkg.sha512"
     },
-    "AutoFixture.Xunit3/5.0.0-preview0012": {
+    "AutoFixture.Xunit2/5.0.0-preview0012": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8YRv0PaWibR9ZztJYqq+a+G+7O5+1Y0IqrOplMAsFEXU2QCc9YPwFb/F5E2gfKkapSkfikZKjujCTryFN17UXQ==",
-      "path": "autofixture.xunit3/5.0.0-preview0012",
-      "hashPath": "autofixture.xunit3.5.0.0-preview0012.nupkg.sha512"
+      "sha512": "sha512-13cZS4shW1XIHZ7T9/6linBgKfMWklr1blNSggMyBdm3PF9D4yq5/XvFa356xNln2Maeb2j7BaZLcE6P/WgP6A==",
+      "path": "autofixture.xunit2/5.0.0-preview0012",
+      "hashPath": "autofixture.xunit2.5.0.0-preview0012.nupkg.sha512"
     },
     "Castle.Core/4.1.0": {
       "type": "package",
@@ -1307,13 +1337,6 @@
       "sha512": "sha512-21XZo/yuXK1k0EUhdLnjgRD4n0HQYmPFchV6uaORcRc65rasZ1vdm2dmJXPBKZiIBztRRYRmmg/B76W721VWkA==",
       "path": "fare/2.2.1",
       "hashPath": "fare.2.2.1.nupkg.sha512"
-    },
-    "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg==",
-      "path": "microsoft.bcl.asyncinterfaces/6.0.0",
-      "hashPath": "microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.14.1": {
       "type": "package",
@@ -1721,6 +1744,13 @@
       "path": "system.management/6.0.1",
       "hashPath": "system.management.6.0.1.nupkg.sha512"
     },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
+    },
     "System.Net.Http/4.3.4": {
       "type": "package",
       "serviceable": true,
@@ -1896,12 +1926,12 @@
       "path": "system.security.cryptography.primitives/4.3.0",
       "hashPath": "system.security.cryptography.primitives.4.3.0.nupkg.sha512"
     },
-    "System.Security.Cryptography.X509Certificates/4.3.0": {
+    "System.Security.Cryptography.X509Certificates/4.3.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-t2Tmu6Y2NtJ2um0RtcuhP7ZdNNxXEgUm2JeoA/0NvlMjAhKCnM1NX07TDl3244mVp3QU6LPEhT3HTtH1uF7IYw==",
-      "path": "system.security.cryptography.x509certificates/4.3.0",
-      "hashPath": "system.security.cryptography.x509certificates.4.3.0.nupkg.sha512"
+      "sha512": "sha512-uwlfOnvJd7rXRvP3aV126Q9XebIIEGEaZ245Rd5/ZwOg7U7AU+AmpE0vRh2F0DFjfOTuk7MAexv4nYiNP/RYnQ==",
+      "path": "system.security.cryptography.x509certificates/4.3.2",
+      "hashPath": "system.security.cryptography.x509certificates.4.3.2.nupkg.sha512"
     },
     "System.Text.Encoding/4.3.0": {
       "type": "package",
@@ -1973,26 +2003,61 @@
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
     },
-    "xunit.runner.visualstudio/3.1.1": {
+    "xunit/2.4.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gNu2zhnuwjq5vQlU4S7yK/lfaKZDLmtcu+vTjnhfTlMAUYn+Hmgu8IIX0UCwWepYkk+Szx03DHx1bDnc9Fd+9w==",
-      "path": "xunit.runner.visualstudio/3.1.1",
-      "hashPath": "xunit.runner.visualstudio.3.1.1.nupkg.sha512"
+      "sha512": "sha512-6Mj73Ont3zj2CJuoykVJfE0ZmRwn7C+pTuRP8c4bnaaTFjwNG6tGe0prJ1yIbMe9AHrpDys63ctWacSsFJWK/w==",
+      "path": "xunit/2.4.2",
+      "hashPath": "xunit.2.4.2.nupkg.sha512"
     },
-    "xunit.v3.common/3.0.0-pre.25": {
+    "xunit.abstractions/2.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ow4PzxvYr0U0brCD1N4P37p+IPKoz6VJw8s9ZMQkdbF4eV+OPp+d64NaDcnsHUK3wZ+7ToXbG9uFFrrUZJ2kxQ==",
-      "path": "xunit.v3.common/3.0.0-pre.25",
-      "hashPath": "xunit.v3.common.3.0.0-pre.25.nupkg.sha512"
+      "sha512": "sha512-pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
+      "path": "xunit.abstractions/2.0.3",
+      "hashPath": "xunit.abstractions.2.0.3.nupkg.sha512"
     },
-    "xunit.v3.extensibility.core/3.0.0-pre.25": {
+    "xunit.analyzers/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MikB5A2QBbLGzqNoqK9MRXez9WAdkiCCH8MnEIHcD85ZHCeRovO5eG7MT3hczIZgGGW92ZOBEUVJY8AOTx+wgw==",
-      "path": "xunit.v3.extensibility.core/3.0.0-pre.25",
-      "hashPath": "xunit.v3.extensibility.core.3.0.0-pre.25.nupkg.sha512"
+      "sha512": "sha512-BeO8hEgs/c8Ls2647fPfieMngncvf0D0xYNDfIO59MolxtCtVjFRd6SRc+7tj8VMqkVOuJcnc9eh4ngI2cAmLQ==",
+      "path": "xunit.analyzers/1.0.0",
+      "hashPath": "xunit.analyzers.1.0.0.nupkg.sha512"
+    },
+    "xunit.assert/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pxJISOFjn2XTTi1mcDCkRZrTFb9OtRRCtx2kZFNF51GdReLr1ls2rnyxvAS4JO247K3aNtflvh5Q0346K5BROA==",
+      "path": "xunit.assert/2.4.2",
+      "hashPath": "xunit.assert.2.4.2.nupkg.sha512"
+    },
+    "xunit.core/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KB4yGCxNqIVyekhJLXtKSEq6BaXVp/JO3mbGVE1hxypZTLEe7h+sTbAhpA+yZW2dPtXTuiW+C1B2oxxHEkrmOw==",
+      "path": "xunit.core/2.4.2",
+      "hashPath": "xunit.core.2.4.2.nupkg.sha512"
+    },
+    "xunit.extensibility.core/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W1BoXTIN1C6kpVSMw25huSet25ky6IAQUNovu3zGOGN/jWnbgSoTyCrlIhmXSg0tH5nEf8q7h3OjNHOjyu5PfA==",
+      "path": "xunit.extensibility.core/2.4.2",
+      "hashPath": "xunit.extensibility.core.2.4.2.nupkg.sha512"
+    },
+    "xunit.extensibility.execution/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CZmgcKkwpyo8FlupZdWpJCryrAOWLh1FBPG6gmVZuPQkGQsim/oL4PcP4nfrC2hHgXUFtluvaJ0Sp9PQKUMNpg==",
+      "path": "xunit.extensibility.execution/2.4.2",
+      "hashPath": "xunit.extensibility.execution.2.4.2.nupkg.sha512"
+    },
+    "xunit.runner.visualstudio/2.4.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OwHamvBdUKgqsXfBzWiCW/O98BTx81UKzx2bieIOQI7CZFE5NEQZGi8PBQGIKawDW96xeRffiNf20SjfC0x9hw==",
+      "path": "xunit.runner.visualstudio/2.4.5",
+      "hashPath": "xunit.runner.visualstudio.2.4.5.nupkg.sha512"
     },
     "ClassToTest/1.0.0": {
       "type": "project",

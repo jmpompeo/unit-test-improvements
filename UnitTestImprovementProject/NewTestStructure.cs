@@ -26,16 +26,12 @@ public class UnitTest1
     
     [Theory]
     [AutoMoqData]
-    public void Subtract_Should_Return_Same_Difference(
-        List<Product> products,
-        [Frozen] Mock<IDependencyClass> dependencyClass,
-        MethodsToTest methodsToTest,
-        MockSetup mockSetup)
+    public void Subtract_Should_Return_Same_Difference(AddNumberContext context)
     {
-        mockSetup.SetupProductPriceMocks(products, dependencyClass);
+        context.MockSetup.SetupProductPriceMocks(context.Products, context.DependencyMock);
 
-        var sum = methodsToTest.Subtract(products);
+        var sum = context.MethodsToTest.Subtract(context.Products);
         
-        sum.ShouldBe(products[0].Price - products[1].Price - products[2].Price);
+        sum.ShouldBe(context.Products[0].Price - context.Products[1].Price - context.Products[2].Price);
     }
 }

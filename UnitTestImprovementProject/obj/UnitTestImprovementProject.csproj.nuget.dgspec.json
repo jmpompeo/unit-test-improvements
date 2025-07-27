@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joeyp\\RiderProjects\\UnitTestImprovementProject\\UnitTestImprovementProject\\UnitTestImprovementProject.csproj": {}
+    "C:\\Users\\prock\\RiderProjects\\unit-test-improvements\\UnitTestImprovementProject\\UnitTestImprovementProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joeyp\\RiderProjects\\UnitTestImprovementProject\\ClassToTest\\ClassToTest.csproj": {
+    "C:\\Users\\prock\\RiderProjects\\unit-test-improvements\\ClassToTest\\ClassToTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joeyp\\RiderProjects\\UnitTestImprovementProject\\ClassToTest\\ClassToTest.csproj",
+        "projectUniqueName": "C:\\Users\\prock\\RiderProjects\\unit-test-improvements\\ClassToTest\\ClassToTest.csproj",
         "projectName": "ClassToTest",
-        "projectPath": "C:\\Users\\joeyp\\RiderProjects\\UnitTestImprovementProject\\ClassToTest\\ClassToTest.csproj",
-        "packagesPath": "C:\\Users\\joeyp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joeyp\\RiderProjects\\UnitTestImprovementProject\\ClassToTest\\obj\\",
+        "projectPath": "C:\\Users\\prock\\RiderProjects\\unit-test-improvements\\ClassToTest\\ClassToTest.csproj",
+        "packagesPath": "C:\\Users\\prock\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prock\\RiderProjects\\unit-test-improvements\\ClassToTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\joeyp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prock\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,21 +66,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\joeyp\\RiderProjects\\UnitTestImprovementProject\\UnitTestImprovementProject\\UnitTestImprovementProject.csproj": {
+    "C:\\Users\\prock\\RiderProjects\\unit-test-improvements\\UnitTestImprovementProject\\UnitTestImprovementProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joeyp\\RiderProjects\\UnitTestImprovementProject\\UnitTestImprovementProject\\UnitTestImprovementProject.csproj",
+        "projectUniqueName": "C:\\Users\\prock\\RiderProjects\\unit-test-improvements\\UnitTestImprovementProject\\UnitTestImprovementProject.csproj",
         "projectName": "UnitTestImprovementProject",
-        "projectPath": "C:\\Users\\joeyp\\RiderProjects\\UnitTestImprovementProject\\UnitTestImprovementProject\\UnitTestImprovementProject.csproj",
-        "packagesPath": "C:\\Users\\joeyp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joeyp\\RiderProjects\\UnitTestImprovementProject\\UnitTestImprovementProject\\obj\\",
+        "projectPath": "C:\\Users\\prock\\RiderProjects\\unit-test-improvements\\UnitTestImprovementProject\\UnitTestImprovementProject.csproj",
+        "packagesPath": "C:\\Users\\prock\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prock\\RiderProjects\\unit-test-improvements\\UnitTestImprovementProject\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\joeyp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prock\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,14 +92,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\joeyp\\RiderProjects\\UnitTestImprovementProject\\ClassToTest\\ClassToTest.csproj": {
-                "projectPath": "C:\\Users\\joeyp\\RiderProjects\\UnitTestImprovementProject\\ClassToTest\\ClassToTest.csproj"
+              "C:\\Users\\prock\\RiderProjects\\unit-test-improvements\\ClassToTest\\ClassToTest.csproj": {
+                "projectPath": "C:\\Users\\prock\\RiderProjects\\unit-test-improvements\\ClassToTest\\ClassToTest.csproj"
               }
             }
           }
@@ -115,7 +125,7 @@
               "target": "Package",
               "version": "[5.0.0-preview0012, )"
             },
-            "AutoFixture.Xunit3": {
+            "AutoFixture.Xunit2": {
               "target": "Package",
               "version": "[5.0.0-preview0012, )"
             },
@@ -135,19 +145,15 @@
               "target": "Package",
               "version": "[4.3.0, )"
             },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.1, )"
-            },
-            "xunit.v3.common": {
-              "target": "Package",
-              "version": "[3.0.0-pre.25, )"
-            },
-            "xunit.v3.extensibility.core": {
-              "target": "Package",
-              "version": "[3.0.0-pre.25, )"
+              "version": "[2.4.5, )"
             }
           },
           "imports": [
@@ -166,7 +172,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
