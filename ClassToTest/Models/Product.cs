@@ -1,13 +1,7 @@
 namespace ClassToTest.Models;
 
-public class Product
+public class Product(string item, int price)
 {
-    public Product(string item, int price)
-    {
-        Item = item;
-        Price = price;
-    }
-
-    public string Item { get; set; }
-    public int Price { get; set; }
+    public string Item { get; set; } = item;
+    public int Price { get; set; } = price;
 }

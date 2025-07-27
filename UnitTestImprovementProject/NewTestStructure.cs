@@ -1,9 +1,4 @@
-﻿using AutoFixture.Xunit2;
-using ClassToTest;
-using ClassToTest.Interfaces;
-using ClassToTest.Models;
-using Moq;
-using Shouldly;
+﻿using Shouldly;
 using UnitTestImprovementProject.Attributes;
 using UnitTestImprovementProject.Models;
 
